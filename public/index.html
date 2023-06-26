@@ -10,6 +10,16 @@
   This is the configuration JSON hosted by Azure.
   <textarea id="configuration"></textarea>
 
+  <!-- Add form for push message and subject -->  
+  <h3>User Input</h3>  
+  <form id="userInputForm">  
+    <label for="pushMessage">Push Message:</label>  
+    <input type="text" id="pushMessage" name="pushMessage">  
+    <br>  
+    <label for="subject">Subject:</label>  
+    <input type="text" id="subject" name="subject">  
+  </form>  
+
   <script src="postmonger.js"></script>
   <script src="activity.js"></script>
 

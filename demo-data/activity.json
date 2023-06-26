@@ -1,38 +1,36 @@
 // Authentication through JWT
 //This will be pasted into the Journey Builder Custom Activity JSON
-{
-  "name": "",
-  "id": null,
-  "key": "REST-1",
-  //Can be authenticated as well as unauthenticated
-  "arguments": {
-    "execute": {
-      "inArguments": [
-        { "contactKey": "{{Contact.Key}}" },
-        { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
-        { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"}
-      ],
-      "url": "https://requestbin.fullcontact.com/r92a9gr9/execute"
-    //Call this URL when it executes
-    }
-  },
-  "configurationArguments": {
-    "publish": {
-      "url": "https://requestbin.fullcontact.com/r92a9gr9/publish"
-    }
-  },
-  "metaData": {
-    "icon": "https://sample-activity.herokuapp.com/icon.png",
-    "category": "message",
-    "iconSmall": null,
-    "original_icon": "icon.png",
-    "isConfigured": true
-  },
-  "editable": true,
-  "outcomes": [
-    {
-      "next": "WAITBYDURATION-1"
-    }
-  ],
-  "errors": []
-}
+{  
+  "name": "",  
+  "id": null,  
+  "key": "REST-1",  
+  "arguments": {  
+    "execute": {  
+      "inArguments": [  
+        { "contactKey": "{{Contact.Key}}" },  
+        { "PushMessage": ""},  
+        { "Subject": ""}  
+      ],  
+      "url": "https://requestbin.fullcontact.com/r92a9gr9/execute"  
+    }  
+  },  
+  "configurationArguments": {  
+    "publish": {  
+      "url": "https://requestbin.fullcontact.com/r92a9gr9/publish"  
+    }  
+  },  
+  "metaData": {  
+    "icon": "customactivity.azurewebsites.net/azure.png",  
+    "category": "message",  
+    "iconSmall": null,  
+    "original_icon": "azure.png",  
+    "isConfigured": true  
+  },  
+  "editable": true,  
+  "outcomes": [  
+    {  
+      "next": "WAITBYDURATION-1"  
+    }  
+  ],  
+  "errors": []  
+}  

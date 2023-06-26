@@ -11,12 +11,12 @@
         { "PushMessage": ""},  
         { "Subject": ""}  
       ],  
-      "url": "https://requestbin.fullcontact.com/r92a9gr9/execute"  
+      "url": "https://customactivity.azurewebsites.net/displayRequest"  
     }  
   },  
   "configurationArguments": {  
     "publish": {  
-      "url": "https://requestbin.fullcontact.com/r92a9gr9/publish"  
+      "url": "https://customactivity.azurewebsites.net/displayRequest"  
     }  
   },  
   "metaData": {  

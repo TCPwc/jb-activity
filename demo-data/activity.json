@@ -1,8 +1,10 @@
 // Authentication through JWT
+//This will be pasted into the Journey Builder Custom Activity JSON
 {
   "name": "",
   "id": null,
   "key": "REST-1",
+  //Can be authenticated as well as unauthenticated
   "arguments": {
     "execute": {
       "inArguments": [
@@ -11,6 +13,7 @@
         { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"}
       ],
       "url": "https://requestbin.fullcontact.com/r92a9gr9/execute"
+    //Call this URL when it executes
     }
   },
   "configurationArguments": {

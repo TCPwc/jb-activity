@@ -7,7 +7,9 @@
   "arguments": {  
     "execute": {  
       "inArguments": [  
-        { "contactKey": "{{Contact.Key}}" },  
+        { "contactKey": "{{Contact.Key}}" },
+        { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
+        { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"},  
         { "PushMessage": ""},  
         { "Subject": ""}  
       ],  
